@@ -1,0 +1,32 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  padding: 2vh;
+  border: 1px rgb(201, 194, 194) solid;
+}
+ul {
+  list-style: none;
+}
+.Titles {
+  padding: 2vh;
+  border: 1px rgb(201, 194, 194) solid;
+  display: flex;
+  justify-content: flex-start;
+  text-align: left;
+  flex-direction: row;
+  width: 100%;
+}
+.CreatedTimeAndAuthor {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.Questions {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  padding-left: 10vw;
+  width: 100%;
+}
