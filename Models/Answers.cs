@@ -14,5 +14,11 @@ namespace SuncoastOverflow.Models
     public DateTime CreatedTime { get; set; } = DateTime.Now;
 
     public string Author { get; set; }
+
+    // Navigation properties
+
+    public int QuestionId { get; set; }
+
+    public Questions Questions { get; set; }
   }
 }
