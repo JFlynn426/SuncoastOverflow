@@ -31,6 +31,7 @@ namespace content
         var envConn = Environment.GetEnvironmentVariable("DATABASE_URL");
 
         var conn = "server=localhost;database=SuncoastOverflow";
+        //for john user id and pw User Id=dev;Password=dev
         if (envConn != null)
         {
           conn = ConvertPostConnectionToConnectionString(envConn);
