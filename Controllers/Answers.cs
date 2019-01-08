@@ -18,7 +18,7 @@ namespace content.Controllers
     }
     [HttpGet]
 
-    public ActionResult<List<Answers>> GetAllAnswers()
+    public ActionResult<List<Answers>> GetAllAskQuestions()
     {
       var results = this.db.Answers;
       return results.ToList();

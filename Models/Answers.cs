@@ -9,11 +9,11 @@ namespace SuncoastOverflow.Models
 
     public string AnswerBody { get; set; }
 
-    public int Votes { get; set; }
+    public int AnswerVotes { get; set; }
 
-    public DateTime CreatedTime { get; set; } = DateTime.Now;
+    public DateTime AnswerCreatedTime { get; set; } = DateTime.Now;
 
-    public string Author { get; set; }
+    public string AnswerAuthor { get; set; }
 
     // Navigation properties
 
