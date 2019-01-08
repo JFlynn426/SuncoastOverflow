@@ -18,9 +18,9 @@ export class Questions extends Component {
           <div className="Questions">
             <textarea id="story" name="story" rows="5" cols="33" />
 
-            <div className="CreatedTimeAndAuthor">
+            <div class="CreatedTimeAndAuthor">
               <div>Modified 2 minutes ago</div>
-              <div>Author's name</div>
+              <input type="text" />
             </div>
           </div>
         </div>
