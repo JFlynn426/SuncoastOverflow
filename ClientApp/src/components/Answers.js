@@ -6,7 +6,7 @@ export class Answers extends Component {
   render() {
     return (
       <div>
-        <h4>Question Title</h4>
+        <h4>Questions</h4>
         <div className="PostedQuestion">
           <div className="VoteButton">
             <button className="VoteButton">Vote Up</button>
