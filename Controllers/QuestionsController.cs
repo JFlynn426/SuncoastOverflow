@@ -36,5 +36,14 @@ namespace content.Controllers
       return incomingQuestions;
     }
 
+    // [HttpPost]
+    // public ActionResult<Questions> AddQuestions([FromBody] Questions incomingQuestions)
+    // {
+    //   var db = new DatabaseContext();
+    //   db.Questions.Add(incomingQuestions);
+    //   db.SaveChanges();
+    //   return incomingQuestions;
+    // }
+
   }
 }
