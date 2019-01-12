@@ -18,10 +18,21 @@ namespace content.Controllers
     }
     [HttpGet]
 
-    public ActionResult<List<Answers>> GetAllAskQuestions()
+    public ActionResult<List<Answers>> GetAllAnswers()
     {
       var results = this.db.Answers;
       return results.ToList();
+    }
+
+
+
+    [HttpPost]
+    public ActionResult<Answers> AddAnswers([FromBody] Answers incomingAnswers)
+    {
+      var db = new DatabaseContext();
+      db.Answers.Add(incomingAnswers);
+      db.SaveChanges();
+      return incomingAnswers;
     }
   }
 }
