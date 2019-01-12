@@ -1,8 +1,27 @@
 import React, { Component } from 'react'
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom'
+import axios from 'axios'
 
 export class Home extends Component {
   static displayName = Home.name
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      allQuestions: []
+    }
+  }
+  componentDidMount() {
+    this.loadAllQuestions()
+  }
+
+  loadAllQuestions = () => {
+    axios.get('https://localhost:5001/api/questions').then(resp => {
+      this.setState({
+        allQuestions: resp.data
+      })
+    })
+  }
 
   render() {
     return (
@@ -22,7 +41,11 @@ export class Home extends Component {
               <div>Votes Counter</div>
             </div>
             <div className="Questions">
-              <h2>Question Title 1</h2>
+              <h2>
+                {this.state.allQuestions.map(question => {
+                  return <div>{question.questionTitle}</div>
+                })}
+              </h2>
               <div className="CreatedTimeAndAuthor">
                 <div>Modified 2 minutes ago</div>
                 <div>Author's name</div>
