@@ -36,14 +36,22 @@ namespace content.Controllers
       return incomingQuestions;
     }
 
-    // [HttpPost]
-    // public ActionResult<Questions> AddQuestions([FromBody] Questions incomingQuestions)
-    // {
-    //   var db = new DatabaseContext();
-    //   db.Questions.Add(incomingQuestions);
-    //   db.SaveChanges();
-    //   return incomingQuestions;
-    // }
+    [HttpDelete("{id}")]
+    public ActionResult<Object> DeleteQuestions([FromRoute] int id)
+    {
+      var db = new DatabaseContext();
+      var questionsToDelete = db.Questions.FirstOrDefault(questions => questions.Id == id);
+      if (questionsToDelete != null)
+      {
+        db.Questions.Remove(questionsToDelete);
+        db.SaveChanges();
+        return questionsToDelete;
+      }
+      else
+      {
+        return new { message = "Question not found" };
+      }
+    }
 
   }
 }
