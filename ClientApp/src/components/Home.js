@@ -19,53 +19,53 @@ export class Home extends Component {
             <div className="VoteButton">
               <button className="VoteButton">Vote Up</button>
               <button className="VoteButton">Vote Down</button>
+              <div>Votes Counter</div>
             </div>
-
             <div className="Questions">
               <h2>Question Title 1</h2>
-
               <div className="CreatedTimeAndAuthor">
                 <div>Modified 2 minutes ago</div>
                 <div>Author's name</div>
               </div>
             </div>
           </div>
+
           <div className="Titles">
             <div className="VoteButton">
               <button className="VoteButton">Vote Up</button>
               <button className="VoteButton">Vote Down</button>
+              <div>Votes Counter</div>
             </div>
-
             <div className="Questions">
               <h2>Question Title 2</h2>
-
               <div className="CreatedTimeAndAuthor">
                 <div>Modified 2 minutes ago</div>
                 <div>Author's name</div>
               </div>
             </div>
           </div>
+
           <div className="Titles">
             <div className="VoteButton">
               <button className="VoteButton">Vote Up</button>
               <button className="VoteButton">Vote Down</button>
+              <div>Votes Counter</div>
             </div>
-
             <div className="Questions">
               <h2>Question Title 3</h2>
-
               <div className="CreatedTimeAndAuthor">
                 <div>Modified 2 minutes ago</div>
                 <div>Author's name</div>
               </div>
             </div>
           </div>
+
           <div className="Titles">
             <div className="VoteButton">
               <button className="VoteButton">Vote Up</button>
               <button className="VoteButton">Vote Down</button>
+              <div>Votes Counter</div>
             </div>
-
             <div className="Questions">
               <h2>Question Title 4</h2>
               <div className="CreatedTimeAndAuthor">

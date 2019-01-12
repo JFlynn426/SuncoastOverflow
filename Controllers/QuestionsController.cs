@@ -24,6 +24,14 @@ namespace content.Controllers
       var results = this.db.Questions;
       return results.ToList();
     }
+    // [HttpPost]
+    // public ActionResult<Questions> AddQuestions([FromBody] Questions incomingQuestions)
+    // {
+    //   var db = new SuncoastOverflowDbContext();
+    //   db.Questions.Add(incomingQuestions);
+    //   db.SaveChanges();
+    //   return incomingQuestions;
+    // }
 
   }
 }
